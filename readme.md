@@ -28,7 +28,7 @@ You MUST specify an incident, this provides an entry point to pass commands into
 ### How it works
 When a demisto method is call, i.e. demisto.executeCommand(), it is posted to an XSOAR incident as a command:
 ```
-!py script=`return_results(demisto.executeCommand(<params>))
+!py script=`return_results(demisto.executeCommand(<params>))`
 ```
 
 Demisto Live then polls for the results of the command, waiting for the results entry to be posted to the incidents. After the entry is received, DemistoLive unpacks it and passes back the results the same as they would come from the Demisto Class.
