@@ -1,4 +1,4 @@
-import DemistoLive._0demistomock as demisto
+from DemistoLive._2_DemistoLive import demisto
 """Common functions script
 This script will be appended to each server script before being executed.
 Please notice that to add custom common code, add it to the CommonServerUserPython script.
@@ -7185,6 +7185,10 @@ class CommandResults:
                  entry_type=None,
                  content_format=None,
                  execution_metrics=None):
+        """
+
+        :rtype: object
+        """
         # type: (str, object, object, list, str, object, IndicatorsTimeline, Common.Indicator, bool, bool, ScheduledCommand, list, int, str, List[Any]) -> None  # noqa: E501
         if raw_response is None:
             raw_response = outputs

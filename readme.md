@@ -25,6 +25,10 @@ You MUST specify an incident, this provides an entry point to pass commands into
 | IS_INTEGRATION | true/false - Set the Demisto class to integration mode| 
 | VERIFY_SSL | true/false - Validate SSL Certificate when connecting to XSOAR
 
+### Import Scheme
+Because the CommonServerPython file is a Monolith and there are various checks for 'demisto' in the script, it has to be imported twice and in a bizarre string of imports. 
+
+The files import order is marked in the prefix of the file, with _0_demistomock.py being the base. If you need to update the CommonServerPython scripts, you can simply copy/paste over the existing CommonServerPython code, just leaving in place the imports on line 1 of each file.
 
 ### Known Caveats
 1. Integration can not use demisto.executeCommand() [This is a security feature to XSOAR]

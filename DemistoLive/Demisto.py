@@ -1,3 +1,3 @@
-from DemistoLive._4CommonServerPython import *
+from DemistoLive._4_CommonServerPython import *
 from builtins import print
 print = print

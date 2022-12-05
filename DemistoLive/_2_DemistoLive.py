@@ -1,7 +1,7 @@
 import json
 from json.decoder import JSONDecodeError
 import pickle
-from DemistoLive._1CommonServerPython import Demisto
+from DemistoLive._1_CommonServerPython import Demisto
 from requests import post
 from time import sleep
 from pprint import pprint
