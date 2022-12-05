@@ -1,0 +1,15 @@
+{
+    "API_KEY" : "",
+    "SERVER_URL" : "",
+    "INCIDENT_ID" : "24",
+    "CACHE_FILE_NAME": "context.pickle",
+    "CACHE_CONTEXT" : true,
+    "POST_RESULTS" : false,
+    "ARGS" : {"value": "sample_value"},
+    "PARAMS": {"test": "params"},
+    "COMMAND": "fetch-incidents",
+    "RETRY_COUNT": 5,
+    "RETRY_TIME": 0.5,
+    "IS_INTEGRATION": false,
+    "VERIFY_SSL": false
+}

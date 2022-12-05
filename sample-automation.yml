@@ -1,0 +1,10 @@
+commonfields:
+  id: e928effb-6b7b-4516-a216-55a9e425cd2c
+  version: -1
+enabled: false
+name: sample-automation
+script: '-'
+subtype: python3
+system: false
+timeout: '0'
+type: python
